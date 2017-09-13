@@ -1,5 +1,6 @@
 package duel;
 
-public class CharacterA {
+public class CharacterA implements Dueler{
 
+	
 }

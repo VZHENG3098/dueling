@@ -9,11 +9,11 @@ public class CharacterB implements Dueler{
 		
 	}
 	public void taunt() {
-		String taunt = ("Fight");
+		String taunt = ("Fight me");
 		System.out.println(taunt);
 	}
 	public String getName() {
-		String name = "David";
+		name = "David";
 		return name;
 	}
 	
@@ -23,11 +23,6 @@ public class CharacterB implements Dueler{
 	}
 	
 	public int getHP(){
-	
 		return hp;
-		
 	}
-	
-		
-
 }

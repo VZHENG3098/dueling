@@ -12,8 +12,8 @@ public class CharacterB implements Dueler{
 		String taunt = ("Fight");
 		System.out.println(taunt);
 	}
-	public String getName; {
-		
+	public String getName() {
+		return name;
 	}
 	
 	public void setStartingHP(int hp) {
@@ -21,7 +21,7 @@ public class CharacterB implements Dueler{
 		
 	}
 	
-	public void int getHP(){
+	public int getHP(){
 	
 		return hp;
 		

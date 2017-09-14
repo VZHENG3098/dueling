@@ -8,14 +8,15 @@ public class CharacterA implements Dueler{
 		
 	}
 	public void taunt() {
-		String output = ("stuff");
-		System.out.println(output);
+		String taunt = ("stuff");
+		System.out.println(taunt);
 	}
 	public String getName() {
+		name = "Vincent";
 		return name;
 	}
 	public void setStartingHP(int hp) {
-		
+		System.out.println(hp);
 	}
 	public int getHP() {
 		return hp;

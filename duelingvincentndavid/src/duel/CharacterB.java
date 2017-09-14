@@ -9,7 +9,7 @@ public class CharacterB implements Dueler{
 		
 	}
 	public void taunt() {
-		String taunt = ("Fight me");
+		String taunt = ("you are trash!!!");
 		System.out.println(taunt);
 	}
 	public String getName() {

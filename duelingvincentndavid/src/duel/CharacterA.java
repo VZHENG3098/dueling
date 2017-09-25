@@ -37,9 +37,17 @@ public class CharacterA implements Dueler{
 			ifLoaded = true;
 			return 0;
 		}else {
-			return 1;
+			int randNumber = (int)Math.random()*2;
+			
+			if (randNumber == 1) {
+				return 1;
+			}else {
+				ifLoaded = false;
+				return 2;
+			}
 		}
 	}
+	
 	public void hit(Object caller) {
 		health = health - 10;
 	}

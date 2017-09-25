@@ -2,7 +2,8 @@ package duel;
 
 public class CharacterA implements Dueler{
 	private String name;
-	private int hp;
+	private int health;
+	private boolean ifLoaded = false;
 	
 	public CharacterA(){
 		
@@ -17,10 +18,30 @@ public class CharacterA implements Dueler{
 	}
 	public void setStartingHP(int hp) {
 		System.out.println(hp);
+		hp = 100;
+		health = hp;
+		
 	}
 	public int getHP() {
-		return hp;
+		return health;
 	}
-
+	
+	public boolean determineIfOpponentIsFair(Dueler d, int hp){
+		if(d.getHP() != hp) {
+			return false;
+		}
+		return true;
+	}
+	public int getAction(Object caller) {
+		if(ifLoaded == false) {;
+			ifLoaded = true;
+			return 0;
+		}else {
+			return 1;
+		}
+	}
+	public void hit(Object caller) {
+		health = health - 10;
+	}
 	
 }

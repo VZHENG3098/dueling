@@ -37,7 +37,7 @@ public class CharacterA implements Dueler{
 			ifLoaded = true;
 			return 0;
 		}else {
-			int randNumber = (int)Math.random()*2;
+			int randNumber = (int) (Math.floor(Math.random() * 2) + 1);
 			
 			if (randNumber == 1) {
 				return 1;

@@ -4,6 +4,7 @@ public class CharacterB implements Dueler{
 	
 	private String name;
 	public int hp;
+	private boolean ifLoaded = false;
 	
 	public CharacterB(){
 		
@@ -25,4 +26,36 @@ public class CharacterB implements Dueler{
 	public int getHP(){
 		return hp;
 	}
+	
+	
+
+	public boolean determineIfOpponentIsFair(Dueler d, int hp){
+		
+		if(d.getHP()!=hp)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+		
+	}
+	
+	
+	public int getAction(Object caller) {
+		if(ifLoaded == false) {;
+			ifLoaded = true;
+			return 0;
+		}else {
+			return 1;
+		}
+	}
+	
+	public void hit(Object caller){
+			hp=hp-10;
+		
+	}
+	
+	
 }

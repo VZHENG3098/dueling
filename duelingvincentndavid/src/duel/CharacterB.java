@@ -3,7 +3,7 @@ package duel;
 public class CharacterB implements Dueler{
 	
 	private String name;
-	public int hp;
+	public int hp1;
 	private boolean ifLoaded = false;
 	
 	public CharacterB(){
@@ -20,11 +20,13 @@ public class CharacterB implements Dueler{
 	
 	public void setStartingHP(int hp) {
 		System.out.println(hp);
+		hp = 100;
+		hp1 = hp;
 		
 	}
 	
 	public int getHP(){
-		return hp;
+		return hp1;
 	}
 	
 	
@@ -48,12 +50,19 @@ public class CharacterB implements Dueler{
 			ifLoaded = true;
 			return 0;
 		}else {
-			return 1;
+			int randNumber = (int)Math.random()*2;
+			
+			if (randNumber == 1) {
+				return 1;
+			}else {
+				ifLoaded = false;
+				return 2;
+			}
 		}
 	}
 	
 	public void hit(Object caller){
-			hp=hp-10;
+			hp1=hp1-10;
 		
 	}
 	

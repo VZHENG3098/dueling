@@ -40,9 +40,9 @@ public class CharacterA implements Dueler{
 			int randNumber = (int) (Math.floor(Math.random() * 2) + 1);
 			
 			if (randNumber == 1) {
+				ifLoaded = false;
 				return 1;
 			}else {
-				ifLoaded = false;
 				return 2;
 			}
 		}
